@@ -6,7 +6,6 @@ services:
     volumes:
       - ./go/src:/go/src:cached
     command: ["go", "run", "./src/app/server.go"]
-    tty: true
   mysql:
     image: mysql:latest
     volumes:
@@ -30,4 +29,3 @@ services:
     depends_on:
       - go
       - mysql
-    tty: true
