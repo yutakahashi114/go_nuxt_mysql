@@ -46,10 +46,11 @@ export default {
   ** See https://axios.nuxtjs.org/options
   */
   axios: {
+    debug: true,
     proxy: true
   },
   proxy: {
-    '/api/': { target: 'http://go:8080', pathRewrite: { '^/api/': '/' } }
+    '/api': 'http://go:8080'
   },
   /*
   ** Build configuration

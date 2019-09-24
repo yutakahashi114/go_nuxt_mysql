@@ -13,3 +13,7 @@ https://qiita.com/Statham/items/046649bff81c00ba275e
 mysql
 https://qiita.com/A-Kira/items/f401aea261693c395966
 https://qiita.com/moaikids/items/f7c0db2c98425094ef10
+
+firebase
+https://firebase.google.com/docs/hosting/full-config#rewrites
+https://stackoverflow.com/questions/48589821/firebase-hosting-how-to-prevent-caching-for-the-index-html-of-an-spa

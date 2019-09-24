@@ -13,7 +13,7 @@ export const mutations = {
 export const actions = {
     async getAllUsers(context) {
         try {
-            const { data } = await axios.get('/api/users')
+            const { data } = await axios.get('/api/all-users')
             context.commit('setUsers', data)
         } catch (error) {
             console.log(error)
