@@ -13,8 +13,11 @@ func init() {
 
 	userController := controllers.NewUserController(NewSqlHandler())
 
-	router.POST("/users", func(c *gin.Context) { userController.Create(c) })
-	router.GET("/users/:id", func(c *gin.Context) { userController.Show(c) })
-	router.GET("/users", func(c *gin.Context) { userController.All(c) })
+	api := router.Group("/api")
+	{
+		api.POST("/users", func(c *gin.Context) { userController.Create(c) })
+		api.GET("/users/:id", func(c *gin.Context) { userController.Show(c) })
+		api.GET("/all-users", func(c *gin.Context) { userController.All(c) })
+	}
 	Router = router
 }

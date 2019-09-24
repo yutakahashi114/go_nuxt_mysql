@@ -3,9 +3,12 @@ services:
   go:
     build:
       context: ./go/
+      target: dev
     volumes:
       - ./go/src:/go/src:cached
     command: ["go", "run", "./src/app/server.go"]
+    env_file:
+      - ./go/.env
   mysql:
     image: mysql:latest
     volumes:
