@@ -17,7 +17,7 @@ func init() {
 	{
 		api.POST("/users", func(c *gin.Context) { userController.Create(c) })
 		api.GET("/users/:id", func(c *gin.Context) { userController.Show(c) })
-		api.GET("/all-users", func(c *gin.Context) { userController.All(c) })
+		api.GET("/users", func(c *gin.Context) { userController.All(c) })
 	}
 	Router = router
 }
