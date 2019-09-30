@@ -3,6 +3,7 @@
 go
 https://qiita.com/hirotakan/items/698c1f5773a3cca6193e
 https://qiita.com/Azizim_A/items/66564b5dc7597717932b
+https://infraya.work/posts/alpine_with_go-singlebinary/
 
 nuxt
 https://ja.nuxtjs.org/guide/installation
@@ -17,3 +18,7 @@ https://qiita.com/moaikids/items/f7c0db2c98425094ef10
 firebase
 https://firebase.google.com/docs/hosting/full-config#rewrites
 https://stackoverflow.com/questions/48589821/firebase-hosting-how-to-prevent-caching-for-the-index-html-of-an-spa
+https://firebase.google.com/docs/hosting/cloud-run?hl=ja
+
+cloud sql
+https://cloud.google.com/functions/docs/sql?hl=ja#functions_sql_mysql-go
