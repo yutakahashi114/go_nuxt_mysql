@@ -6,7 +6,8 @@ services:
       target: dev
     volumes:
       - ./go/src:/go/src:cached
-    command: ["go", "run", "./src/app/server.go"]
+    working_dir: /go/src/app
+    tty: true
     env_file:
       - ./go/.env
   mysql:

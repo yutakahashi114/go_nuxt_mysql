@@ -4,7 +4,7 @@ RUN apt-get update \
  && apt-get install -y vim \
  && curl https://raw.githubusercontent.com/golang/dep/master/install.sh | sh
 
-# 本番ステージング用
+# 本番ビルド用
 FROM golang:latest as builder
 WORKDIR /go/src/app/
 COPY ./src/app .
